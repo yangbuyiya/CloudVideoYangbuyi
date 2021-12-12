@@ -55,8 +55,8 @@ public class SmsServiceImpl implements SmsService {
         }
         DefaultProfile profile = DefaultProfile.getProfile(
                 "cn-hangzhou",
-                "LTAI4GH19ep2P8caxW2E2N6A",
-                "NAmWiBmKXofw7hs4JRcx7SLhF1MN6P");
+                "你的key",
+                "你的密钥");
         IAcsClient client = new DefaultAcsClient(profile);
         CommonRequest request = new CommonRequest();
         request.setMethod(MethodType.POST);
@@ -64,7 +64,7 @@ public class SmsServiceImpl implements SmsService {
         request.setVersion("2017-05-25");
         request.setAction("SendSms");
         request.putQueryParameter("PhoneNumbers", phoneNumbers);
-        request.putQueryParameter("SignName", "疯码");
+        request.putQueryParameter("SignName", "标签");
         request.putQueryParameter("TemplateCode", templateCode);
         request.putQueryParameter("TemplateParam", JSONObject.toJSONString(param));
         try {
