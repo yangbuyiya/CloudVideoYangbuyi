@@ -1,0 +1,33 @@
+server:
+  port: 8003
+
+logging:
+  pattern:
+    console: "%clr(%5p) %clr(-){faint} %clr(%-80.80logger{79}){cyan} %clr(:) %m%n"
+
+spring:
+  application:
+    name: service-vod
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 180.76.177.246:8848
+        group: yangbuyi_video
+        namespace: 881eb2c7-89c9-40b7-818e-5f3fec23d01e
+      config:
+        # 配置中心地址
+        server-addr: 180.76.177.246:8848
+        group: yangbuyi_video
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+        shared-dataids: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+    # 熔断
+    sentinel:
+      transport:
+        dashboard: http://localhost:8081

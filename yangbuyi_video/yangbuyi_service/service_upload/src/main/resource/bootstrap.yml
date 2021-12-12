@@ -1,0 +1,14 @@
+server:
+  port: 8002
+
+logging:
+  pattern:
+    console: "%clr(%5p) %clr(-){faint} %clr(%-80.80logger{79}){cyan} %clr(:) %m%n"
+
+spring:
+  application:
+    name: service-upload
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true

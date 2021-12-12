@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.yangbuyi.service_authority.mapper.MenuMapper">
+    <select id="selectMenuByUserId" resultType="top.yangbuyi.service_authority.entity.Menu">
+        SELECT DISTINCT am.id,
+                        am.pid,
+                        am.`name`,
+                        am.type,
+                        am.permission_value,
+                        am.path,
+                        am.component,
+                        am.icon,
+                        am.`status`,
+                        am.is_deleted
+        FROM auth_user_role aur
+                     INNER JOIN auth_role_menu arm ON aur.role_id = arm.role_id
+                     INNER JOIN auth_menu am ON arm.permission_id = am.id
+        where aur.user_id = #{id,jdbcType=VARCHAR}
+    </select>
+
+    <select id="selectAllMenuValue" resultType="java.lang.String">
+        select permission_value
+        from auth_menu
+        where type = 2
+          and is_deleted = 0
+    </select>
+
+    <!-- 用于select查询公用抽取的列 -->
+    <sql id="columns">
+        p.id,p.pid,p.name,p.type,p.permission_value,path,p.component,p.icon,p.status,p.is_deleted
+    </sql>
+
+    <select id="selectMenuValueByUserId" resultType="java.lang.String">
+        select
+            p.permission_value
+        from auth_user_role ur
+        inner join auth_role_menu rp on rp.role_id = ur.role_id
+        inner join auth_menu p on p.id = rp.permission_id
+        where ur.user_id = #{userId}
+        and p.type = 2
+        and ur.is_deleted = 0
+        and rp.is_deleted = 0
+        and p.is_deleted = 0
+    </select>
+</mapper>

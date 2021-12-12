@@ -1,0 +1,54 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+      routes:
+
+        - id: service-video
+          uri: lb://service-video
+          predicates:
+            - Path=/service_video/**
+
+        - id: service-vod
+          uri: lb://service-vod
+          predicates:
+            - Path=/service_vod/**
+
+        - id: service-upload
+          uri: lb://service-upload
+          predicates:
+            - Path=/service_upload/**
+
+        - id: service-authority
+          uri: lb://service-authority
+          predicates:
+            - Path=/service_authority/**
+
+        - id: service-cms
+          uri: lb://service-cms
+          predicates:
+            - Path=/service_cms/**
+
+        - id: service-sms
+          uri: lb://service-sms
+          predicates:
+            - Path=/service_sms/**
+
+        - id: service-user
+          uri: lb://service-user
+          predicates:
+            - Path=/service_user/**
+
+        - id: service-pay
+          uri: lb://service-pay
+          predicates:
+            - Path=/service_pay/**
+
+        - id: service-websocket
+          uri: lb://service-websocket
+          predicates:
+            - Path=/service_websocket/**

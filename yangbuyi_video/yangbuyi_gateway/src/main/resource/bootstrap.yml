@@ -1,0 +1,30 @@
+logging:
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %clr(%5p) %clr(-){faint} %clr(%-80.80logger{79}){cyan} %clr(:) %m%n"
+
+server:
+  port: 9728
+
+spring:
+  application:
+    name: auth-gateway
+  profiles:
+    # 环境配置
+    active: dev
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        # 服务注册地址
+        server-addr: 180.76.177.246:8848
+        group: yangbuyi_video
+        namespace: 881eb2c7-89c9-40b7-818e-5f3fec23d01e
+      config:
+        # 配置中心地址
+        server-addr: 180.76.177.246:8848
+        group: yangbuyi_video
+        # 配置文件格式
+        file-extension: yml
+        # 共享配置
+        shared-dataids: application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}

@@ -1,0 +1,14 @@
+server:
+  port: 8006
+
+logging:
+  pattern:
+    console: "%clr(%5p) %clr(-){faint} %clr(%-80.80logger{79}){cyan} %clr(:) %m%n"
+
+spring:
+  application:
+    name: service-sms
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true

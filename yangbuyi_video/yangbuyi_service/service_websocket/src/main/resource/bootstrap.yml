@@ -1,0 +1,14 @@
+server:
+  port: 8009
+
+logging:
+  pattern:
+    console: "%clr(%5p) %clr(-){faint} %clr(%-80.80logger{79}){cyan} %clr(:) %m%n"
+
+spring:
+  application:
+    name: service-websocket
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true

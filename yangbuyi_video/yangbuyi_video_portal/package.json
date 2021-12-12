@@ -1,0 +1,33 @@
+{
+  "name": "yangbuyi_video_portal",
+  "version": "1.0.0",
+  "description": "门户系统",
+  "author": "杨不易呀",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "axios": "^0.21.1",
+    "cookie-universal-nuxt": "^2.1.5",
+    "element-ui": "^2.15.0",
+    "jquery": "^3.6.0",
+    "js-cookie": "^2.2.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "swiper": "^5.3.6",
+    "vue-awesome-swiper": "^4.1.1"
+  }
+}

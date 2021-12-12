@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  top.yangbuyi.service_base.handler.MybatisPlusMetaObjectHandler,\
+  top.yangbuyi.service_base.config.MybatisPlusAppConfig,\
+  top.yangbuyi.service_base.config.RedisConfig

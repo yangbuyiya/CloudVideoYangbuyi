@@ -1,0 +1,332 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
+.three {
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(246, 246, 246, 1);
+  line-height: 20px;
+  padding-top: 31px;
+}
+
+.footer-words {
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+.warper {
+  position: relative;
+  height: 380px;
+}
+
+.swiper-cus {
+  height: 380px;
+  width: 1920px;
+  margin-left: -360px;
+}
+
+.warper_content {
+  width: 1200px;
+  /*height: 380px;*/
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+}
+
+.category {
+  background: rgba(246, 246, 246, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 380px;
+  z-index: 2;
+}
+
+.category ul {
+  padding: 0;
+}
+
+.category ul li {
+  width: 100%;
+  height: 54px;
+  padding: 0 10px 0 20px;
+  cursor: pointer;
+  line-height: 54px;
+  padding: 0;
+}
+
+.category ul li:hover {
+  background: #0486fe;
+}
+
+.category ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  padding-left: 25px;
+}
+
+.open-course-card {
+  width: 375px;
+  margin-top: 5px;
+}
+
+.yd-open-course-card_avatar {
+  float: left;
+  width: 80px;
+  height: 102px;
+  margin-right: 20px;
+}
+
+.yd-open-course-card_avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+
+.yd-open-course-card {
+  font-family: PingFang SC;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid rgba(153, 153, 153, 0.15);
+  border-radius: 8px;
+  height: 143px;
+  min-width: 300px;
+  max-width: 385px;
+  cursor: pointer;
+  float: left;
+  margin-right: 5px;
+  background-color: #fff;
+  overflow: hidden;
+  color: #303133;
+  transition: .3s;
+}
+
+.yd-open-course-card:hover {
+  box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+}
+
+.yd-open-course-card_content_teacher_tag {
+  display: inline-block;
+  height: 17px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  color: #f4ad0b;
+  background: rgba(244, 173, 11, 0.06);
+  border: 0.5px solid rgba(244, 173, 11, 0.4);
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin-bottom: 10px;
+}
+
+.content-box {
+  width: 1160px;
+  height: 270px;
+  background: white;
+  border: 1px solid #f0f0f0;
+  padding: 15px 0 0 15px;
+}
+
+.u-coursetitle {
+  margin-left: 20px;
+  height: 270px;
+}
+
+.u-coursetitle_title {
+  color: #333 !important;
+  font-size: 24px;
+}
+
+.join {
+  margin-top: 95px;
+}
+
+.join a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hot {
+  padding-left: 5px;
+}
+
+.j-do-trailer {
+  color: #4AAF4F;
+  font-size: 20px;
+  line-height: 45px;
+  width: 158px;
+  height: 43px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  border: 1px solid #4AAF4F;
+  margin-left: 20px;
+}
+
+.add-pack {
+  font-size: 14px;
+  color: #0a9a3d;
+  margin-left: 20px;
+  background: url(//s.stu.126.net/res/images/ui/ui_sprite.png?1367c4a…) no-repeat -25px -227px;
+  padding-left: 25px;
+}
+
+.learnbtn {
+  background: #ff8000;
+  color: white;
+  font-size: 20px;
+  line-height: 45px;
+  width: 160px;
+  height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.m-chapterList {
+  border-top: 1px solid #ddd;
+  text-align: left;
+  position: relative;
+  padding-bottom: 1em;
+}
+
+.m-chapterList .chapter {
+  margin-bottom: 10px;
+}
+
+.m-chapterList .chapterhead {
+  height: 35px;
+  color: #999;
+  font-family: '微软雅黑';
+  font-size: 14px;
+  font-weight: bolder;
+  padding: 0 20px;
+  line-height: 35px;
+  cursor: default;
+  background: #fafafa;
+}
+
+.m-chapterList .chaptertitle {
+  width: 62px;
+  height: 35px;
+  text-align: left;
+}
+
+.f-fl {
+  float: left;
+}
+
+.f-thide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+}
+
+.m-chapterList .chaptername {
+  paddding-right: 20px;
+  padding-left: 6px;
+}
+
+.m-chapterList .chaptertrailer {
+  color: #fff;
+  background-color: #4AAF4F;
+  font-size: 12px;
+  padding: 0 3px;
+  font-weight: normal;
+  margin-left: 15px;
+}
+
+.m-chapterList .section {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: background-color 0.15s ease-out;
+}
+
+.m-chapterList .section .ks {
+  width: 62px;
+  color: #999;
+  text-align: left;
+  font-size: 14px;
+}
+
+.m-chapterList .section .type-title {
+  width: 30px;
+  font-size: 12px;
+  border: 1px solid #4AAF4F;
+  color: #4AAF4F;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 6px;
+}
+
+.m-chapterList .section .ksname {
+  width: 450px;
+  padding-left: 6px;
+  color: #333;
+  height: 36px;
+}
+
+.m-chapterList .section .ksjbtn {
+  display: none;
+  color: #10ae58;
+  font-family: '微软雅黑';
+}
+
+.m-chapterList .section .ksjicon-look {
+  width: 14px;
+  height: 10px;
+  margin: 13px 7px 0 0;
+  background-position: -24px -112px;
+}
+
+.m-chapterList .section .ksinfo .kstime {
+  width: 40px;
+  height: 36px;
+  text-align: right;
+  font-size: 12px;
+  color: #b7b8ba;
+}
+
+.m-chapterList .ksinfoicon {
+  width: 13px;
+  height: 15px;
+  margin: 12px 0 0 8px;
+}
+
+.ksinfoicon {
+  background: url(//s.stu.126.net/res/images/listIcons.png?0c5329f…) 9999px 9999px no-repeat;
+}
+
+.m-chapterList .section .canPreview {
+  color: #4AAF4F;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+.u-ctit {
+  height: 20px;
+  padding: 15px 0 15px 15px;
+  font-size: 18px;
+  line-height: 19px;
+  max-width: 660px;
+}
+
+.f-cb {
+  height: 50px;
+  background: white;
+}
+

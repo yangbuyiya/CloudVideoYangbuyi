@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  top.yangbuyi.api_user.factory.RemoteUserFactory,\
+  top.yangbuyi.api_user.entity.User

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.yangbuyi.service_authority.mapper.RoleMapper">
+
+</mapper>

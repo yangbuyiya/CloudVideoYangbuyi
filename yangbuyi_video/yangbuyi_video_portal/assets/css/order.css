@@ -1,0 +1,214 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
+.um-order-ux-order-v2-ct-top {
+  border: solid 1px #dddddd;
+  padding: 0 40px 40px 40px;
+  background: white;
+}
+.um-order-ux-order-v2-ct-top-title {
+  padding: 30px 0px 20px 0px;
+  line-height: 24px;
+  border-bottom: solid 1px #eee;
+  box-sizing: border-box;
+  color: #333333;
+}
+.um-order-ux-order-v2-ct-top-title h1 {
+  display: inline-block;
+  font-size: 18px;
+}
+.um-order-ux-order-v2-ct-top-title h4 {
+  color: #666666;
+  display: inline-block;
+  line-height: 24px;
+  height: 24px;
+  font-size: 14px;
+  position: relative;
+  top: -1px;
+  margin-left: 20px;
+}
+.um-order-ux-order-v2-ct .um-order-ux-order-account {
+  padding: 20px 0 30px 0;
+}
+.um-order-ux-order-account {
+  width: 880px;
+  margin: 0 auto;
+  padding: 20px 0 30px 0;
+}
+.um-order-ux-order-account_avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.um-order-ux-order-account_avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.um-order-ux-order-account_info {
+  margin-left: 12px;
+  line-height: 19px;
+}
+.f-fl {
+  float: left;
+}
+.um-order-ux-order-account_info_nickName {
+  font-size: 14px;
+  color: #333;
+}
+.um-order-ux-order-account_info_tips {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #999;
+  line-height: 16px;
+}
+.um-order-ux-order-account_change {
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+}
+.f-fr {
+  float: right;
+}
+.um-order-ux-order-v2-pay-method {
+  width: 880px;
+  color: #333;
+}
+.um-order-ux-order-v2-pay-method_head {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.um-order-ux-order-v2-pay-method_body {
+  background: #F3F6F7;
+  padding: 0px 12px;
+}
+.um-order-ux-order-v2-pay-method_body .order-v2-pay_current {
+  line-height: 32px;
+  height: 54px;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+.f-cb, .f-cbli li {
+  zoom: 1;
+}
+.um-order-ux-order-v2-pay-method_body .order-v2-pay_other {
+  overflow: hidden;
+  -moz-transition: max-height 0.6s ease;
+  -ms-transition: max-height 0.6s ease;
+  -webkit-transition: max-height 0.6s ease;
+  -o-transition: max-height 0.6s ease;
+  transition: max-height 0.6s ease;
+}
+.order{
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 690px;
+}
+
+.um-order-ux-order-v2-pay-method_body .order-v2-pay_current {
+  line-height: 32px;
+  height: 54px;
+  padding: 12px 0;
+  box-sizing: border-box;
+  background: none;
+}
+
+.um-order-ux-order-v2-pay-method_body .order-v2-pay_current_icon {
+  width: 32px;
+  height: 32px;
+  background: url(//yktcdn.stu.126.net/so/res/img/pay.png?d6f7c2f…) no-repeat 0 0;
+}
+.um-order-ux-order-v2-pay-method_body .order-v2-pay_current_type {
+  margin-left: 12px;
+}
+.um-order-ux-order-v2-pay-method_body .order-v2-pay_current_opt {
+  cursor: pointer;
+  font-size: 14px;
+  color: #666666;
+}
+.um-order-ux-order-school-list {
+  padding-top: 20px;
+}
+.um-order-ux-order-school-list_title {
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.um-order-ux-order-course {
+  width: 880px;
+}
+.um-order-ux-order-course_card {
+  height: 88px;
+  border-bottom: 1px solid #eee;
+}
+.um-order-ux-order-course_card_body {
+  margin-left: 12px;
+  font-size: 12px;
+}
+.um-order-ux-order-course_card_price {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+.um-order-ux-order-v2-ct-bottom {
+  margin-top: 20px;
+}
+.um-order-ux-order-v2-go-pay {
+  width: 960px;
+  box-sizing: border-box;
+  background: #FEFCEF;
+  border: 1px solid #DDD;
+  padding: 20px 40px;
+  padding-bottom: 30px;
+  color: #666;
+  font-size: 14px;
+  height: 125px;
+}
+.um-order-ux-order-v2-go-pay_protocol {
+  right: 219px;
+  text-align: right;
+  top: 60px;
+}
+.f-pa {
+  position: absolute;
+}
+.um-order-ux-order-v2-go-pay_content_price {
+  text-align: right;
+  margin-bottom: 5px;
+}
+.um-order-ux-order-v2-go-pay_content_btn {
+  cursor: pointer;
+  display: inline-block;
+  height: 44px;
+  width: 160px;
+  line-height: 44px;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #FF6600;
+  border-radius: 2px;
+  text-align: center;
+}
+.um-order-ux-order-v2-go-pay_content_price {
+  text-align: right;
+  margin-bottom: 5px;
+}
+.um-order-ux-order-v2-go-pay_content_price .v2-go-pay_content_price_account {
+  font-size: 24px;
+  font-weight: 600;
+  color: #FF6600;
+}
+.um-order-ux-order-v2-go-pay_content_price .v2-go-pay_content_price_account_icon {
+  font-weight: 300;
+  font-size: 14px;
+}
+.f-pr {
+  position: relative;
+}
+.um-order-ux-order-v2-go-pay_protocol_btn {
+  cursor: pointer;
+  color: #49af4f;
+}

@@ -1,0 +1,176 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
+html,body{
+  height:100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background:#1A2633;
+}
+
+.section_a:hover{
+  background: gray;
+}
+
+.back_button{
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+  color: white;
+  padding-left: 25px;
+}
+.back_button a{
+  color: white;
+  text-decoration:none;
+}
+.prism-player video{
+  width: 100% !important;
+  height: 100% !important;
+}
+.video_content{
+  float: left;
+  width: 80%;
+
+}
+.prism-cover{
+  background: no-repeat !important;
+}
+.catalogue{
+  float: left;
+  width: 19%;
+  position:absolute;
+  top:0;
+  bottom:0;
+  right: 0;
+  overflow:auto;
+  background: white;
+  margin-left: 10px;
+}
+.videoPlay_right_top{
+  width: auto;
+  height: auto;
+  padding: 30px 20px;
+  background: #545E86;
+  font-size: 15px;
+  color: white;
+}
+.videoPlay_right_top img{
+  float: left;
+  width: 70px;
+  height: 40px;
+  vertical-align: middle;
+  background: #FFFFFF;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.m-chapterList .chapter {
+  height: 40px;
+  color: #666;
+  font-size: 14px;
+  font-family: '微软雅黑';
+  font-weight: bolder;
+  padding: 10px 12px 0 12px;
+  line-height: 40px;
+  cursor: default;
+}
+.m-chapterList .ch {
+  width: 41px;
+  height: 40px;
+  text-align: left;
+}
+.m-chapterList .chaptericon {
+  height: 25px;
+  width: 25px;
+  margin: 6px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  border-radius: 12.5px;
+  background: white;
+  border:1px solid #ccc;
+}
+.m-chapterList .chaptername {
+  width: 185px;
+  padding-left: 6px;
+}
+.m-chapterList .chaptericon span {
+  display: block;
+  height: 25px;
+  width: 25px;
+  font-size: 14px;
+  margin-top: -1px;
+}
+.m-chapterList .section {
+  height: 36px;
+  line-height: 36px;
+  padding: 0 12px;
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+}
+.m-chapterList .video_active{
+  background: #545E86 !important;
+}
+.m-chapterList .section:hover{
+  background: #545E86 !important;
+}
+.m-chapterList .section:hover .ksname {
+  color: white !important;
+}
+.m-chapterList .video_active .ksname{
+  color: white !important;
+}
+.m-chapterList .video_active .kstime{
+  color: white !important;
+}
+
+.m-chapterList .section .ks {
+  width: 51px;
+  text-align: left;
+  font-size: 12px;
+}
+.m-chapterList .section:hover .ks{
+  color: white !important;
+}
+.m-chapterList .section .ksw {
+  height: 14px;
+  width: 14px;
+  margin: 11px 0 0 0;
+  transition: all 0.15s ease-out;
+  background: white;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+}
+.m-chapterList .section .ksname {
+  padding-left: 8px;
+  color: #999;
+  max-width: 123px;
+  height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.m-chapterList .section .ksinfo {
+  height: 36px;
+}
+.m-chapterList .section .kstime {
+  color: #bababa;
+}
+
+.m-chapterList .section:hover .kstime {
+  color: white;
+}
+
+.m-chapterList .section .flag {
+  width: 16px;
+  height: 18px;
+  margin: 12px 3px 0 3px;
+}
+.line{
+  width: 1px;
+  position: absolute;
+  top: 100px;
+  left: 71px;
+  bottom: 0px;
+  background: #bababa;
+}

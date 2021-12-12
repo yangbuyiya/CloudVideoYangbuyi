@@ -1,0 +1,15 @@
+server:
+  port: 8005
+
+logging:
+  pattern:
+    console: "%clr(%5p) %clr(-){faint} %clr(%-80.80logger{79}){cyan} %clr(:) %m%n"
+
+# Spring
+spring:
+  application:
+    name: service-cms
+  profiles:
+    active: dev
+  main:
+    allow-bean-definition-overriding: true

@@ -1,0 +1,16 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  redis:
+    host: 
+    port: 6391
+    database: 3
+    timeout: 1800000
+    password: 
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: 1
+        max-idle: 5
+        min-idle: 0

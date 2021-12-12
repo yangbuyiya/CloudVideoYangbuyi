@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.yangbuyi.service_video.mapper.ContentMapper">
+    <resultMap id="BaseResultMap" type="top.yangbuyi.api_video.entity.Content">
+        <!--@mbg.generated-->
+        <!--@Table `video_content`-->
+        <id column="id" jdbcType="CHAR" property="id"/>
+        <result column="author_id" jdbcType="CHAR" property="authorId"/>
+        <result column="category_id" jdbcType="CHAR" property="categoryId"/>
+        <result column="category_parent_id" jdbcType="CHAR" property="categoryParentId"/>
+        <result column="title" jdbcType="VARCHAR" property="title"/>
+        <result column="price" jdbcType="DECIMAL" property="price"/>
+        <result column="content_num" jdbcType="INTEGER" property="contentNum"/>
+        <result column="cover" jdbcType="VARCHAR" property="cover"/>
+        <result column="buy_count" jdbcType="BIGINT" property="buyCount"/>
+        <result column="view_count" jdbcType="BIGINT" property="viewCount"/>
+        <result column="version" jdbcType="BIGINT" property="version"/>
+        <result column="status" jdbcType="VARCHAR" property="status"/>
+        <result column="is_deleted" jdbcType="TINYINT" property="isDeleted"/>
+        <result column="gmt_create" jdbcType="TIMESTAMP" property="gmtCreate"/>
+        <result column="gmt_modified" jdbcType="TIMESTAMP" property="gmtModified"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+        <!--@mbg.generated-->
+        `id`, `author_id`, `category_id`, `category_parent_id`, `title`, `price`, `content_num`,
+        `cover`, `buy_count`, `view_count`, `version`, `status`, `is_deleted`, `gmt_create`,
+        `gmt_modified`
+    </sql>
+
+    <select id="getContentPreviewWhitById" resultType="top.yangbuyi.api_video.entity.vo.ContentPreviewVo">
+        SELECT c.title,
+               c.cover,
+               c.content_num                   AS contentNum,
+               CONVERT(c.price, DECIMAL(8, 2)) AS price,
+               c1.title                        AS oneCategory,
+               c2.title                        AS twoCategory,
+               a.NAME                          AS author
+        FROM video_content c
+                     LEFT JOIN video_author a ON c.author_id = a.id
+                     LEFT JOIN video_category c1 ON c.category_parent_id = c1.id
+                     LEFT JOIN video_category c2 ON c.category_id = c2.id
+        WHERE c.id = #{id}
+    </select>
+
+    <select id="getContentDetailById" resultType="top.yangbuyi.api_video.entity.vo.ContentWebVO">
+        SELECT
+        c.id,
+        c.title,
+        c.cover,
+        CONVERT(c.price, DECIMAL(8,2)) AS price,
+        c.content_num AS contentNum,
+        c.cover,
+        c.buy_count AS buyCount,
+        c.view_count AS viewCount,
+        cd.description,
+
+        t.id AS authorId,
+        t.name AS authorName,
+        t.intro,
+        t.avatar,
+
+        s1.id AS oneCategoryId,
+        s1.title AS oneCategoryName,
+        s2.id AS twoCategoryId,
+        s2.title AS twoCategoryName
+        FROM
+        video_content c
+        LEFT JOIN video_content_description cd ON c.id = cd.id
+        LEFT JOIN video_author t ON c.author_id = t.id
+        LEFT JOIN video_category s1 ON c.category_parent_id = s1.id
+        LEFT JOIN video_category s2 ON c.category_id = s2.id
+        WHERE
+        c.id = #{id}
+    </select>
+</mapper>

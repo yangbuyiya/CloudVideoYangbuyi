@@ -1,0 +1,241 @@
+/*
+ * Yang Shuai  Copyright (c) 2021 https://yangbuyi.top.
+ */
+
+body{
+    background-color: #F1F1F1;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+/*选择器*/
+.login-up-msg{
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    color: #969696;
+  padding-top: 10px;
+}
+
+/*标签选择器*/
+a{
+    text-decoration: none;
+}
+
+/*后代选择器*/
+.login-up-msg a{
+    color: #3194d0;
+}
+
+.login-up-msg a:hover{
+    text-decoration: underline;
+}
+
+
+.el-tabs__item{
+  width: 200px;
+  font-size: 20px;
+  padding: 0;
+  height: 50px;
+}
+.el-tabs__item:hover{
+  color: orangered;
+  border-bottom-color: orangered;
+}
+.el-tabs__active-bar {
+  background-color: orangered;
+}
+
+.login {
+    height: 100%;
+    min-height: 750px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #f1f1f1;
+}
+
+/*表单样式*/
+.login .main{
+    background-color: #FFFFFF;
+    width: 1200px;
+    padding: 50px 400px 0  400px;
+    margin: 60px auto 0 auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+
+}
+
+.login .logo{
+    position: absolute;
+    top: 56px;
+    left: 50px;
+}
+.el-tabs__item.is-active {
+  color: orangered;
+}
+
+/*登录注册文字*/
+.login .title{
+    margin: 0 auto 50px;
+    padding: 10px;
+    text-align: center;
+}
+
+.login .title a{
+    padding: 10px;
+    color: #969696;
+    font-size: 18px;
+}
+
+.login .title a:hover{
+    border-bottom: 2px solid #3BB149;
+}
+
+.login .title .active{
+    font-weight: 700;
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+
+.login .title span{
+    padding: 10px;
+    color: #969696;
+    font-weight: 700;
+}
+
+/*表单文本框
+.login form .input input{
+    width: 100%;
+    height: 50px;
+    padding: 4px 12px 4px 35px;
+    border: 1px solid #c8c8c8;
+    background-color: #F8F8F8;
+    box-sizing: border-box;
+}*/
+
+.login form .restyle {
+    margin-bottom: 0;
+}
+.login form .input-prepend {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.login form .input-prepend input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 0;
+    padding: 4px 12px 4px 35px;
+    border: 1px solid #c8c8c8;
+    vertical-align: middle;
+  background: none;
+}
+
+.login form .input-prepend i {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    font-size: 20px;
+    color: #969696;
+    margin-top: -8px;
+}
+.login .login-up-button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 9px 18px;
+    font-size: 18px;
+    border: none;
+    color: #FFFFFF;
+    background-color: orangered;
+    cursor: pointer;
+}
+.login .login-up-button:hover{
+    background-color: orangered;
+}
+
+.login .login-in-button{
+    margin-top: 20px;
+    width: 100%;
+    padding: 9px 18px;
+    font-size: 18px;
+    border: none;
+
+    color: #FFFFFF;
+    background-color: orangered;
+    cursor: pointer;
+}
+.login .login-in-button:hover{
+    background-color: #187cb7;
+}
+
+.login .more-sign {
+    margin-top: 50px;
+}
+
+.login .more-sign h6 {
+    position: relative;
+    margin: 0 0 10px;
+    font-size: 12px;
+    color: #b5b5b5;
+}
+
+.login .more-sign h6:after, .login .more-sign h6:before {
+    content: "";
+    border-top: 1px solid #b5b5b5;
+    display: block;
+    position: absolute;
+    width: 60px;
+    top: 5px;
+}
+.login .more-sign h6:before {
+    left: 30px;
+}
+
+.login .more-sign h6:after {
+    right: 30px;
+}
+.login .more-sign h6:after, .login .more-sign h6:before {
+    content: "";
+    border-top: 1px solid #b5b5b5;
+    display: block;
+    position: absolute;
+    width: 60px;
+    top: 5px;
+}
+
+.login .more-sign ul {
+    margin-bottom: 10px;
+    list-style: none;
+	padding-left: 0;
+}
+
+.login .more-sign ul li {
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.login .more-sign ul a {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+}
+.login .more-sign .icon-weixin {
+    color: #00bb29;
+}
+.login .more-sign .icon-qq {
+    color: #498ad5;
+}
+.login .more-sign ul i {
+    font-size: 28px;
+}
+.ic-wechat:before {
+    content: "\E604";
+}
+.ic-qq_connect:before {
+    content: "\E603";
+}
+
+
