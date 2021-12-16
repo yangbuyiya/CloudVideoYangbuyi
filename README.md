@@ -6,8 +6,6 @@
 * 流量控制框架选型Sentinel。
 * 提供了技术栈（[Vue3](https://v3.cn.vuejs.org) [Element Plus](https://element-plus.org/zh-CN) [Vite](https://cn.vitejs.dev)）
 
-
-
 ## 系统模块
 
 ~~~
@@ -38,42 +36,105 @@ top.yangbuyi
 ├──pom.xml                   // 公共依赖
 ~~~
 
-
 ## 内置功能
 
-1.  用户管理：用户是系统操作者，该功能主要完成系统用户配置。
-2.  菜单管理：配置系统菜单，操作权限，按钮权限标识等。
-3.  角色管理：角色菜单权限分配、设置角色按机构进行数据范围权限划分。
-4.  字典管理：对系统中经常使用的一些较为固定的数据进行维护。
-5.  参数管理：对系统动态配置常用参数。
-6.  操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
-7.  登录日志：系统登录日志记录查询包含登录异常。
-8.  系统接口：根据业务代码自动生成相关的api接口文档。
+1. 用户管理：用户是系统操作者，该功能主要完成系统用户配置。
+2. 菜单管理：配置系统菜单，操作权限，按钮权限标识等。
+3. 角色管理：角色菜单权限分配、设置角色按机构进行数据范围权限划分。
+4. 字典管理：对系统中经常使用的一些较为固定的数据进行维护。
+5. 参数管理：对系统动态配置常用参数。
+6. 操作日志：系统正常操作日志记录和查询；系统异常信息日志记录和查询。
+7. 登录日志：系统登录日志记录查询包含登录异常。
+8. 系统接口：根据业务代码自动生成相关的api接口文档。
 
 ## 演示图
+
 ### 后端页面
+
+#### 后端首页
+
 ![后端首页](yangbuyi_video/images/img.png)
+
+#### 门户焦点图管理
+
 ![门户焦点图管理](yangbuyi_video/images/img_1.png)
+
+#### 门户页面-列表
+
 ![门户作品管理-列表](yangbuyi_video/images/img_2.png)
+
+#### 门户页面-编辑
+
 ![门户作品管理-编辑](yangbuyi_video/images/img_3.png)
+
+#### 门户作品分类管理-列表
+
 ![门户作品分类管理-列表](yangbuyi_video/images/img_4.png)
+
+#### 门户作品分类管理-上传分类
+
 ![门户作品分类管理-上传分类](yangbuyi_video/images/img_5.png)
+
+#### 门户创作者管理-列表
+
 ![门户创作者管理-列表](yangbuyi_video/images/img_6.png)
+
+#### 门户创作者管理-编辑
+
 ![门户创作者管理-编辑](yangbuyi_video/images/img_7.png)
+
+#### 后端用户管理-列表
+
 ![后端用户管理-列表](yangbuyi_video/images/img_8.png)
+
+#### 后端角色管理-列表
+
 ![后端角色管理-列表](yangbuyi_video/images/img_9.png)
+
+#### 后端菜单管理-列表
+
 ![后端菜单管理-列表](yangbuyi_video/images/img_10.png)
 
 ### 前端门户
+
+#### 门户页面-首页
+
 ![门户页面-首页](yangbuyi_video/images/img_11.png)
+
+#### 门户页面-全部视频
+
 ![门户页面-全部视频](yangbuyi_video/images/img_12.png)
+
+#### 门户页面-创作者
+
 ![门户页面-创作者](yangbuyi_video/images/img_13.png)
+
+#### 门户页面-视频详情购买页
+
 ![门户页面-视频详情购买页](yangbuyi_video/images/img_14.png)
+
+#### 门户页面-订单页面
+
 ![门户页面-订单页面](yangbuyi_video/images/img_15.png)
+
+#### 门户页面-支付页面1
+
 ![门户页面-支付页面1](yangbuyi_video/images/img_16.png)
+
+#### 门户页面-支付页面2
+
 ![门户页面-支付页面2](yangbuyi_video/images/img_17.png)
+
+#### 门户页面-支付页面3
+
 ![门户页面-支付页面3](yangbuyi_video/images/img_18.png)
+
+#### 门户页面-支付页面4（购买成功）
+
 ![门户页面-支付页面4（购买成功）](yangbuyi_video/images/img_19.png)
+
+#### 门户页面-立即学习页
+
 ![门户页面-立即学习页](yangbuyi_video/images/img_20.png)
 
 ## 开源微服务交流群
