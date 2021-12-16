@@ -1,7 +1,3 @@
-## video
-本系统是一款类似于教学网站平台视频点播技术，课程功能作品观看一些类教学视频操作
-
-
 ## 平台简介
 
 * 采用前后端分离的模式，微服务版本前端(使用vue-admin花裤衩模板)。
@@ -55,7 +51,30 @@ top.yangbuyi
 8.  系统接口：根据业务代码自动生成相关的api接口文档。
 
 ## 演示图
-....
+### 后端页面
+![后端首页](yangbuyi_video/images/img.png)
+![门户焦点图管理](yangbuyi_video/images/img_1.png)
+![门户作品管理-列表](yangbuyi_video/images/img_2.png)
+![门户作品管理-编辑](yangbuyi_video/images/img_3.png)
+![门户作品分类管理-列表](yangbuyi_video/images/img_4.png)
+![门户作品分类管理-上传分类](yangbuyi_video/images/img_5.png)
+![门户创作者管理-列表](yangbuyi_video/images/img_6.png)
+![门户创作者管理-编辑](yangbuyi_video/images/img_7.png)
+![后端用户管理-列表](yangbuyi_video/images/img_8.png)
+![后端角色管理-列表](yangbuyi_video/images/img_9.png)
+![后端菜单管理-列表](yangbuyi_video/images/img_10.png)
+
+### 前端门户
+![门户页面-首页](yangbuyi_video/images/img_11.png)
+![门户页面-全部视频](yangbuyi_video/images/img_12.png)
+![门户页面-创作者](yangbuyi_video/images/img_13.png)
+![门户页面-视频详情购买页](yangbuyi_video/images/img_14.png)
+![门户页面-订单页面](yangbuyi_video/images/img_15.png)
+![门户页面-支付页面1](yangbuyi_video/images/img_16.png)
+![门户页面-支付页面2](yangbuyi_video/images/img_17.png)
+![门户页面-支付页面3](yangbuyi_video/images/img_18.png)
+![门户页面-支付页面4（购买成功）](yangbuyi_video/images/img_19.png)
+![门户页面-立即学习页](yangbuyi_video/images/img_20.png)
 
 ## 开源微服务交流群
 
