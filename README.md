@@ -11,6 +11,9 @@
 
 QQ群： 598347590
 
+## 基本操作文档
+[文档](https://www.yangbuyi.top/archives/yiketang)
+
 ## 系统模块
 
 ~~~
