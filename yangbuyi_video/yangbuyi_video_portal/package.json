@@ -27,7 +27,7 @@
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^4.0.0",
-    "swiper": "^5.3.6",
+    "swiper": "^6.5.1",
     "vue-awesome-swiper": "^4.1.1"
   }
 }
