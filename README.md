@@ -1,3 +1,8 @@
+
+## 最新版本请前往gitee拉取
+https://gitee.com/yangbuyi/yi
+
+
 ## 平台简介
 
 * 采用前后端分离的模式，微服务版本前端(使用vue-admin花裤衩模板)。
